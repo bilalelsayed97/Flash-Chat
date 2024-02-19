@@ -1,11 +1,3 @@
-//
-//  ChatViewController.swift
-//  Flash Chat iOS13
-//
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
-//
-
 import UIKit
 import FirebaseAuth
 
@@ -25,12 +17,12 @@ class ChatViewController: UIViewController {
     
     @IBAction func signOut(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
-//        do {
-//            try Auth.auth().signOut()
-//            navigationController?.popToRootViewController(animated: true)
-//        } catch let e as NSError {
-//            print(e)
-//        }
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let e as NSError {
+            print(e)
+        }
     }
     
 }

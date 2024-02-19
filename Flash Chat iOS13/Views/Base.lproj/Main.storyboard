@@ -344,6 +344,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="LjW-At-ifT">
+                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZC-Yj-1oM">
+                                    <rect key="frame" x="-63" y="-13" width="126" height="26"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                    <color key="textColor" name="BrandBlue"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="XZC-Yj-1oM" firstAttribute="centerX" secondItem="LjW-At-ifT" secondAttribute="centerX" id="Mg0-Va-c4v"/>
+                                <constraint firstItem="XZC-Yj-1oM" firstAttribute="centerY" secondItem="LjW-At-ifT" secondAttribute="centerY" id="YU7-eu-OwS"/>
+                            </constraints>
+                        </view>
                         <barButtonItem key="rightBarButtonItem" title="SignOut" id="RmQ-Jx-N6y">
                             <connections>
                                 <action selector="signOut:" destination="lwd-AH-u8E" id="8M3-Ak-mq1"/>
