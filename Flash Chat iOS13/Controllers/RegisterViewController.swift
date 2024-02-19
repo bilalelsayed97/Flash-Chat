@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func registerPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+        self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
 //        if let email = emailTextfield.text, let password = passwordTextfield.text {
 //            createNewUser(email, password)
 //        }
@@ -24,7 +24,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             if let e = error {
                 print(e.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
             }
             
         }

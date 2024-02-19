@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "LoginToChat", sender: self)
+        self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
         //        if let email = emailTextfield.text, let password = passwordTextfield.text {
         //            signIn(email, password)
         //        }
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
             if let e = error {
                 print(e.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
             }
             
         }
